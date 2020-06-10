@@ -207,15 +207,7 @@ hr{
         bottom: 0;
         border: 1px solid #d061a5;
     }
-
-    .navbar-collaspe{
-        background-color: gray !important;
-        border-radius: 4px !important;
-        transition: background .3s ease-out !important;
-        height: auto;
-    }
-    
-        
+       
     .navbar-nav, .btn-header{
         margin: 0;
     }
