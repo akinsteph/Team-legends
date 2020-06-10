@@ -17,11 +17,13 @@
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="circle">
+          <input type="checkbox" class="menu-btn" id="menu-btn"/>
+          <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+        </span> 
       </button>
       
-      <div class="collapse navbar-collapse text-nowrap justify-content-sm-center justify-content-md-center" id="navbarSupportedContent">
-        
+      <div class="collapse navbar-collapse text-nowrap" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link home navLink" href="#">Home </a>
@@ -30,45 +32,35 @@
               <a class="nav-link about navLink" href="#">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link blog navLink" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link contact navLink"  href="#">Contact Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link text dropdown-toggle" href="#" id="navbarDropdown" role="button"  data-toggle="dropdown"  data-display="static" 
+               <a class="nav-link blog navLink" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contact navLink"  href="#">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text dropdown-toggle" href="#" id="navbarDropdown" role="button"  data-toggle="dropdown"  data-display="static" 
                 aria-haspopup="true" aria-expanded="false">
                   Sell Bitcoin/Giftcard
-                </a>
-                
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <div class="triangle"></div>
+              </a>  
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="triangle"></div>
                   <div class="dropbox">
                     <a class="dropdown-item" href="#">Sell Bitcoin</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item giftcard" href="#">Sell Giftcard</a>
                   </div>
                 </div>
-              </li>
+            </li>
           </ul>
-         
             <button class="btn btn-header" type="submit">LOGIN</button>
         </div>
       </nav>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <hr>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script>
-        $(document).ready(function(){
-          $('.navbar-toggler-icon').click(function(){
-            $('.navbar-toggler').toggleClass('active')
-          })
-        })
-
-      </script>
 </body>
 </html>

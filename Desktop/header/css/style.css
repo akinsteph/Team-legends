@@ -1,0 +1,243 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-style: normal;
+}
+
+
+.navbar{
+    width: 90vw;
+    margin: 30px auto;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+.navbar-nav{
+    margin-left: 200px;
+    font-size: 15px;
+}
+
+.nav-item{
+    margin-left: 35px;
+    
+}
+
+.nav-link{
+    color: #212529 !important;
+    position: relative;
+}
+
+.dropdown{
+    margin-left: 70px;
+    margin-right: 20px;
+    
+}
+
+#navbarDropdown{
+    color: inherit;
+}
+
+.btn-header{
+    background: linear-gradient(179.41deg, #FD749B -13.56%, #281AC8 158.3%);
+    width: 157px;
+    height: 54px;
+    left: 1255px;
+    top: 37px;
+    border-radius: 100px;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-menu{
+    left: 79.53%;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    margin-top: 20px;    
+}
+
+.dropdown-item{
+    margin-top: -8px;
+    margin-bottom: -8px;
+   
+}
+
+.giftcard{
+    color: #FFFFFF;;
+    background: linear-gradient(179.62deg, #FD749B -13.56%, #281AC8 158.3%);
+    
+}
+
+.navbar-toggler{
+    border-style: none;
+    margin-right: 25vw;
+    margin-top: 8px;
+}
+
+.navbar-toggler-icon{
+    display: none;
+}
+
+.menu-icon{
+    padding: 28px 15px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+
+.navLink:hover::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    border: 1px solid #d061a5;
+}
+
+.navbar-toggler:focus{
+    outline: 0;
+}
+
+.nav-icon{
+       background: linear-gradient(179.62deg, #FD749B -13.56%, #281AC8 158.3%);
+       display: block;
+       height: 2.2px;
+       width: 25px;
+       position: relative;
+       transition: background .2s ease-out;
+   }
+
+   .nav-icon:before{
+        background: linear-gradient(179.62deg, #FD749B -13.56%, #281AC8 158.3%);
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        top: 7px;
+   }
+
+   .nav-icon:after{
+    background: linear-gradient(179.62deg, #FD749B -13.56%, #281AC8 158.3%);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -7px;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.menu-btn:checked ~ .menu{
+    max-height: 240px;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+hr{
+    display: none;
+}
+
+@media(max-width: 992px){
+
+    .navbar-toggler{
+        margin-right: -3vw;
+    }
+
+    .home:hover::after {
+        content: "";
+        position: absolute;
+        left: 1%;
+        width: 30px;
+        right: 25%;
+        bottom: 0;
+        border: 1px solid #d061a5;
+    }
+
+    .about:hover::after {
+        content: "";
+        position: absolute;
+        left: 1%;
+        width: 40px;
+        right: 18%;
+        bottom: 0;
+        border: 1px solid #d061a5;
+    }
+
+    .blog:hover::after {
+        content: "";
+        position: absolute;
+        left: 1%;
+        width: 24px;
+        right: 10%;
+        bottom: 0;
+        border: 1px solid #d061a5;
+    }
+
+    .contact:hover::after {
+        content: "";
+        position: absolute;
+        left: 1%;
+        width: 50px;
+        right: 10%;
+        bottom: 0;
+        border: 1px solid #d061a5;
+    }
+
+    .navbar-collaspe{
+        background-color: gray !important;
+        border-radius: 4px !important;
+        transition: background .3s ease-out !important;
+        height: auto;
+    }
+    
+        
+    .navbar-nav, .btn-header{
+        margin: 0;
+    }
+
+    hr{
+        display: block;
+    }
+    .dropdown{
+        margin-left: 35px;
+    }
+
+    .dropdown-menu{
+        left: 2%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        width: 30%;
+    }
+
+    .nav-item{
+        margin: 0;   
+    }
+
+    .btn-header{
+        padding-top: 13px;
+        margin-top: 10px;
+    }
+}
+
